@@ -13,6 +13,7 @@ class BroadcastScheduleInstallCommand extends Command
 
     public function handle(): int
     {
+        $this->call('migrate');
         $this->call('db:seed', ['class' => DefaultSeeder::class]);
 
         return self::SUCCESS;

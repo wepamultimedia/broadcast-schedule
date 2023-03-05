@@ -26,7 +26,7 @@ class CalendarRequest extends FormRequest
         return [
             'day' => 'required|string',
             'program_id' => 'required',
-            'description' => 'description|string|nullable',
+            'description' => 'string|nullable',
             'highlight' => 'bool|nullable',
             'time' => 'required|dateformat:H:i',
         ];
