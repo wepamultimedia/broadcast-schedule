@@ -26,7 +26,7 @@ return new class extends Migration
             $table->foreignId('program_id');
             $table->string('day');
             $table->time('time');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->boolean('highlight')->default(false);
 
             $table->foreign('program_id')
