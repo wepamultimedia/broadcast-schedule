@@ -7,7 +7,6 @@ return [
     'create_summary' => 'Rellene los campos para crear un horario de emisión de un programa.',
     'edit_summary' => 'Modifique el formulario para cambiar el horario de emisión de un programa.',
     'delete_title' => 'Borrar programción',
-    'calandar' => 'Calendario',
     'monday' => 'Lunes',
     'tuesday' => 'Martes',
     'wednesday' => 'Miércoles',
