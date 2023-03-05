@@ -24,7 +24,7 @@ class Program extends Model
         'name',
         'description',
         'image',
-        'image_alt'
+        'image_alt',
     ];
 
     public function calendar(): HasMany
