@@ -53,9 +53,6 @@ const calendarItems = computed(() => {
 
     return items;
 });
-
-const fileTime = new Date("1980-02-20 " + "04:50:00").getTime();
-const nowTime = new Date().getTime();
 </script>
 <template>
     <div class="flex justify-between my-0 items-center h-14 rounded-lg overflow-hidden my-6">

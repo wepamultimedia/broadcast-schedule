@@ -31,8 +31,8 @@ const form = useForm({
 function submit() {
     form.put(route("admin.broadcast-schedule.programs.update", {program: props.program.id}), {
         preserveScroll: true, preserveState: true,
-        onSuccess: () => store.dispatch("addAlert", {type: "success", message: __("saved")}),
-        onError: () => store.dispatch("addAlert", {type: "error", message: form.errors})
+        onSuccess: () => store.dispatch("backend/addAlert", {type: "success", message: __("saved")}),
+        onError: () => store.dispatch("backend/addAlert", {type: "error", message: form.errors})
     });
 }
 </script>
