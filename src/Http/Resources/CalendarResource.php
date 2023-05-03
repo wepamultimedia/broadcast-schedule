@@ -14,7 +14,7 @@ class CalendarResource extends JsonResource
             'time' => $this->time,
             'highlight' => $this->highlight,
             'name' => $this->program->name,
-            'description' => $this->program->description,
+            'description' => $this->description ?? $this->program->description,
             'image' => $this->program->image,
             'on_air' => $this->on_air,
         ];

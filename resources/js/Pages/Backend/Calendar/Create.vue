@@ -102,8 +102,7 @@ function submit() {
                         <div class="col-span-3">
                             <Checkbox v-model="form.highlight"
                                       :label="__('highlight')"
-                                      :name="__('highlight')"
-                                      required/>
+                                      :name="__('highlight')"/>
                         </div>
                     </div>
                     <div class="rounded-b-lg overflow-hidden">

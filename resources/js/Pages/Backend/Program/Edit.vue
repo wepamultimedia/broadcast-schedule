@@ -66,8 +66,7 @@ function submit() {
                             <Textarea v-model="form"
                                       :errors="form.errors"
                                       :label="__('description')"
-                                      name="description"
-                                      translation/>
+                                      name="description"/>
                         </div>
                         <div class="col-span-6 md:col-span-3 mb-6">
                             <InputImage v-model="form.image"

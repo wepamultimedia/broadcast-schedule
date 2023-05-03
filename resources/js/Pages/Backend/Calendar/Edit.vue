@@ -32,7 +32,7 @@ const programItems = props.programs.map(program => {
 const form = useForm({
     id: props.calendar.id,
     program_id: props.calendar.program_id,
-    description: props.description,
+    description: props.calendar.description,
     day: props.calendar.day,
     highlight: props.calendar.highlight === 1,
     time: props.calendar.time
@@ -103,8 +103,7 @@ function submit() {
                         <div class="col-span-3">
                             <Checkbox v-model="form.highlight"
                                       :label="__('highlight')"
-                                      :name="__('highlight')"
-                                      required/>
+                                      :name="__('highlight')"/>
                         </div>
                     </div>
                     <div class="rounded-b-lg overflow-hidden">
